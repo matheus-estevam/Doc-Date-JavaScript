@@ -50,7 +50,18 @@
     />
     <!-- ClipBoard -->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <!-- teste -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/icone.png" type="image/x-icon" />
   </head>
   <body>
     <div class="wrapper">
@@ -75,26 +86,40 @@
                 <a href="#intro">Introdução ao Objeto Date</a>
               </li>
               <li>
-                <a href="#">Home 2</a>
+                <a href="#manipulacao">Manipulação de Datas</a>
               </li>
               <li>
-                <a href="#">Home 3</a>
+                <a href="#descricao">Descrição</a>
+              </li>
+              <li>
+                <a href="#datas">Operações com Datas</a>
+              </li>
+              <li>
+                <a href="#fuso">Fuso Horário e Internacionalização</a>
+              </li>
+              <li>
+                <a href="#boasPraticas">Boas Práticas</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">Equipe</a>
+            <a href="#equipe">Equipe</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date"
+              target="_blank"
+              >MDN DOCS - Referência</a
+            >
           </li>
         </ul>
 
         <ul class="list-unstyled CTAs">
           <li>
             <a
-              href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+              href="./dowload/Date - JavaScript.pdf"
               class="download"
+              download="Date - JavaScript.pdf"
               >Download da Documentação</a
             >
           </li>
@@ -182,51 +207,154 @@
           objetos JavaScript, objetos JavaScript Date não têm sintaxe literal.
         </p>
 
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
+        <h2>Instâncias JavaScript de Date</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Todas as instâncias Date são herdadas de Date.prototype (en-US). O
+          objeto protótipo do construtor Date pode ser modificado para afetar
+          todas as instâncias de Date.
         </p>
 
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <h3><a></a></h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
         <div class="form-group">
           <label for="texto">Exemplo:</label>
-          <textarea class="form-control" id="texto" rows="4"> Bagre</textarea>
+          <textarea class="form-control" id="exemploIntroInstancia" rows="4">
+            var today = new Date();
+            var birthday = new Date("December 17, 1995 03:24:00");
+            var birthday = new Date("1995-12-17T03:24:00");
+            var birthday = new Date(1995, 11, 17);
+            var birthday = new Date(1995, 11, 17, 3, 24, 0);
+            </textarea
+          >
         </div>
-        <button class="btn btn-primary" data-clipboard-target="#texto">
-          Copiar Texto
+        <button
+          class="btn btn-primary"
+          data-clipboard-target="#exemploIntroInstancia"
+        >
+          Copiar Código
         </button>
 
         <div class="line"></div>
+
+        <h2 id="manipulacao">Manipulação de Datas</h2>
+        <p>
+          <strong>Métodos Fundamentais:</strong> getDate(), getMonth(),
+          getFullYear(), now() ,etc
+        </p>
+        <p>
+          <strong>Formatos de Data e Hora:</strong>
+          <strong
+            >Demonstração de toLocaleDateString() e toLocaleTimeString()</strong
+          >
+          para se adequar às preferências locais do usuário. Personalização de
+          formatos usando parâmetros.
+        </p>
+
+        <div class="form-group">
+          <label for="texto">Exemplo:</label>
+          <textarea class="form-control" id="manipulacaoExemplo" rows="4">
+            let dataAtual = new Date(); 
+            console.log(dataAtual.getDate());
+            </textarea
+          >
+        </div>
+        <button
+          class="btn btn-primary"
+          data-clipboard-target="#manipulacaoExemplo"
+        >
+          Copiar Código
+        </button>
+
+        <div class="line"></div>
+
+        <h2 id="descricao">Descrição</h2>
+        <ul>
+          <li>
+            Exemplo prático: Agendamento de eventos com a capacidade de
+            adicionar e subtrair dias.
+          </li>
+          <li>
+            Se ao menos 2 argumentos forem fornecidos, os argumentos ausentes
+            serão configurados como 1 (se o dia estiver ausente) ou 0 para todos
+            os outros.
+          </li>
+          <li>
+            O objeto Date JavaScript suporta vários métodos UTC (universal),
+            assim como métodos de tempo locais. UTC, também conhecido como Tempo
+            Médio de Greenwich (Greenwich Mean Time, GMT), refere-se ao tempo
+            como definido pelo Padrão de Tempo Mundial (World Time Standard). O
+            tempo local é o tempo conhecido pelo computador onde o JavaScript é
+            executado.
+          </li>
+          <li>
+            Invocar o objeto Date no JavaScript como uma função (i.e., sem o
+            operador new) retornará uma string representando a data e hora
+            corrente.
+          </li>
+        </ul>
+        <div class="line"></div>
+        <h2 id="datas">Operações com Datas</h2>
+        <p>
+          <strong>Adição e Subtração: </strong> Exemplo prático: Agendamento de
+          eventos com a capacidade de adicionar e subtrair dias. Uso de métodos
+          como <strong>setDate() e getDate().</strong>
+        </p>
+        <p>
+          <strong>Comparação de Datas:</strong>
+          Comparação direta com operadores lógicos. Exemplo: Verificação se uma
+          data é posterior a outra.
+        </p>
+        <div class="line"></div>
+        <h2 id="fuso">Fuso Horário e Internacionalização</h2>
+        <p>
+          <strong>Trabalhando com Fusos Horários: </strong> Exemplo de uma
+          aplicação de colaboração global que exibe datas de acordo com a
+          localização do usuário. Utilização de
+          <strong>toLocaleString()</strong> para uma experiência personalizada.
+        </p>
+        <p>
+          <strong>nternacionalização de Datas: </strong>
+          Destaque para a importância da adaptação cultural em aplicações
+          internacionalizadas. Uso de <strong>Intl.DateTimeFormat</strong> para
+          formatar datas conforme as preferências culturais do usuário.
+        </p>
+
+        <div class="line"></div>
+        <h2 id="boasPraticas">Boas Práticas</h2>
+        <p>
+          <strong>Boas Práticas na Manipulação de Datas: </strong> Considerações
+          sobre eficiência e legibilidade do código. Recomendação de bibliotecas
+          externas, como date-fns, para cenários mais complexos. Importância de
+          validação e formatação consistente para melhorar a usabilidade.
+        </p>
+        <p>
+          <strong>Dicas Avançadas: </strong>
+          Estratégias para lidar com datas em ambientes assíncronos. Utilização
+          de bibliotecas modernas, como <strong>Luxon</strong> ou
+          <strong>Day.js</strong>, para uma experiência de desenvolvimento mais
+          robusta.
+        </p>
+
+        <div id="equipe">
+          <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+          >
+            <p class="col-md-4 mb-0 text-muted">
+              © 2023 Grupo Date - Nova Roma
+            </p>
+
+            <a
+              href="/"
+              class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+            >
+            </a>
+
+            <p class="nav col-md-4 justify-content-end">
+              <strong
+                >Equipe: Sidraque , Matheus Estevam , Júlio César, Roberto Luís
+                , Cauet Roberto.
+              </strong>
+            </p>
+          </footer>
+        </div>
       </div>
     </div>
 
