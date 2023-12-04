@@ -72,7 +72,7 @@
             >
             <ul class="collapse list-unstyled" id="homeSubmenu">
               <li>
-                <a href="#">Home 1</a>
+                <a href="#intro">Introdução ao Objeto Date</a>
               </li>
               <li>
                 <a href="#">Home 2</a>
@@ -83,33 +83,10 @@
             </ul>
           </li>
           <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a
-              href="#pageSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-              >Pages</a
-            >
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li>
-                <a href="#">Page 1</a>
-              </li>
-              <li>
-                <a href="#">Page 2</a>
-              </li>
-              <li>
-                <a href="#">Page 3</a>
-              </li>
-            </ul>
+            <a href="#">Equipe</a>
           </li>
           <li>
             <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
           </li>
         </ul>
 
@@ -170,24 +147,39 @@
           </div>
         </nav>
 
-        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+        <h2 id="intro">Introdução ao Objeto Date</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <strong>Contextualização:</strong> O JavaScript, sendo uma linguagem
+          baseada em navegador, oferece o objeto Date para trabalhar com datas e
+          horas. Fundamental para diversas funcionalidades, como exibição de
+          horários, agendamentos e manipulação de eventos temporais.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <strong>Características do Objeto Date:</strong> Armazena datas em
+          milissegundos desde 1º de janeiro de 1970 (Epoch), e permite operações
+          flexíveis e formatação customizada.
+        </p>
+
+        <div class="form-group">
+          <label for="texto">Exemplo:</label>
+          <textarea class="form-control" id="exemploIntro" rows="4">
+            new Date();
+            new Date(valor);
+            new Date(dataString);
+            new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
+            </textarea
+          >
+        </div>
+        <button class="btn btn-primary" data-clipboard-target="#exemploIntro">
+          Copiar Código
+        </button>
+
+        <p id="nota">
+          <strong>Nota:</strong> Note que objetos JavaScript Date só podem ser
+          instanciados chamando JavaScript Date como um construtor: chamá-lo
+          como uma função regular (ou seja, sem o operador new) irá retornar uma
+          string ao invés de um objeto Date; ao contrário de outros tipos de
+          objetos JavaScript, objetos JavaScript Date não têm sintaxe literal.
         </p>
 
         <div class="line"></div>
@@ -216,9 +208,7 @@
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor</h3>
+        <h3><a></a></h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -235,6 +225,8 @@
         <button class="btn btn-primary" data-clipboard-target="#texto">
           Copiar Texto
         </button>
+
+        <div class="line"></div>
       </div>
     </div>
 
