@@ -49,6 +49,11 @@ a:focus {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+#seach{
+    height: 40px;
+    margin-top: 10px;
+}
+
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
@@ -74,14 +79,14 @@ a:focus {
 
 #sidebar {
     min-width: 250px;
-    max-width: 250px;
+    max-width: 350px;
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -350px;
 }
 
 #sidebar .sidebar-header {
@@ -169,10 +174,54 @@ a.article:hover {
 }
 
 /* ---------------------------------------------------
+Adições para a área de resultados e botões de execução
+------------------------------------------------------ */
+.form-group {
+    margin-bottom: 30px;
+}
+
+textarea {
+    font-family: 'Courier New', monospace;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#resultadoIntro,
+#resultadoDataString {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff; 
+}
+
+#resultadoIntro,
+#resultadoDataString {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.highlight {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+
+/* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+    #content {
+        padding: 10px;
+    }
+
     #sidebar {
         margin-left: -250px;
     }
@@ -185,3 +234,4 @@ a.article:hover {
         display: none;
     }
 }
+
