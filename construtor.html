@@ -1,418 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Construtor - Date()</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-      crossorigin="anonymous"
-    />
 
-    <!-- Font Awesome JS -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Construtor - Date()</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Popper.JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap JS -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  </script>
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <!-- ClipBoard -->
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
-    <!-- teste -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- ClipBoard -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+  <!-- teste -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./img/icone.png" type="image/x-icon" />
-  </head>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
 
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar  -->
-      <nav id="sidebar">
-        <div class="sidebar-header">
-          <img src="./img/logo-white.png" alt="" srcset="" width="180px" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./img/icone.png" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <img src="./img/logo-white.png" alt="" srcset="" width="180px" />
+      </div>
+
+      <ul class="list-unstyled components">
+        <p>Documentação Date - JavaScript</p>
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="index.html#intro">Introdução ao Objeto Date</a>
+            </li>
+            <li>
+              <a href="index.html#manipulacao">Manipulação de Datas</a>
+            </li>
+            <li>
+              <a href="index.html#descricao">Descrição</a>
+            </li>
+            <li>
+              <a href="index.html#datas">Operações com Datas</a>
+            </li>
+            <li>
+              <a href="index.html#fuso">Fuso Horário e Internacionalização</a>
+            </li>
+            <li>
+              <a href="index.html#boasPraticas">Boas Práticas</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#construtorSubmenu" data-toggle="collapse" aria-expanded="false"
+            class="dropdown-toggle">Construtor</a>
+          <ul class="collapse list-unstyled" id="construtorSubmenu">
+            <li>
+              <a href="#date">Date ()</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#metodosSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Métodos</a>
+          <ul class="collapse list-unstyled" id="metodosSubmenu">
+            <li>
+              <a href="metodos.html#dateToPrimitive">Date.prototype[@@toPrimitive]()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetDate">Date.prototype.getDate()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetDay">Date.prototype.getDay()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetFullYear">Date.prototype.getFullYear()</a>
+            </li>
+
+            <li>
+              <a href="metodos.html#dateGetHours">Date.prototype.getHours()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetMilliseconds">Date.prototype.getMilliseconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetMinutes">Date.prototype.getMinutes()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetMonth">Date.prototype.getMonth()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetSeconds">Date.prototype.getSeconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetTime">Date.prototype.getTime()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetTimezoneOffset">Date.prototype.getTimezoneOffset()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCDate">Date.prototype.getUTCDate()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCDay">Date.prototype.getUTCDay()
+              </a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCFullYear">Date.prototype.getUTCFullYear()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCHours">Date.prototype.getUTCHours()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCMilliseconds">Date.prototype.getUTCMilliseconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCMinutes">Date.prototype.getUTCMinutes()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCMonth">Date.prototype.getUTCMonth()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateGetUTCSeconds">Date.prototype.getUTCSeconds()</a>
+            </li>
+            <li><a href="metodos.html#dateNow">Date.now()</a></li>
+            <li><a href="metodos.html#dateParse">Date.parse()</a></li>
+            <li>
+              <a href="metodos.html#dateSetDate">Date.prototype.setDate()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetFullYear">Date.prototype.setFullYear()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetHours">Date.prototype.setHours()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetMilliseconds">Date.prototype.setMilliseconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetMinutes">Date.prototype.setMinutes()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetMonth">Date.prototype.setMonth()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetSeconds">Date.prototype.setSeconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetTime">Date.prototype.setTime()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCDate">Date.prototype.setUTCDate()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCFullYear">Date.prototype.setUTCFullYear()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCHours">Date.prototype.setUTCHours()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCMilliseconds">Date.prototype.setUTCMilliseconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCMinutes">Date.prototype.setUTCMinutes()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCMonth">Date.prototype.setUTCMonth()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateSetUTCSeconds">Date.prototype.setUTCSeconds()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToDateString">Date.prototype.toDateString()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToISOString">Date.prototype.toISOString()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToJSON">Date.prototype.toJSON()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToLocaleDateString">Date.prototype.toLocaleDateString()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToLocaleTimeString">Date.prototype.toLocaleTimeString()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToString">Date.prototype.toString()</a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToTimeString">Date.prototype.toTimeString()
+              </a>
+            </li>
+            <li>
+              <a href="metodos.html#dateToUTCString">Date.prototype.toUTCString()</a>
+            </li>
+            <li><a href="metodos.html#dateUTC">Date.UTC()</a></li>
+            <li>
+              <a href="metodos.html#dateValueOf">Date.prototype.valueOf()</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#equipe">Equipe</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date"
+            target="_blank">MDN DOCS - Referência</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a href="./dowload/Date - JavaScript.pdf" class="download" download="Date - JavaScript.pdf">Download da
+            Documentação</a>
+        </li>
+        <li>
+          <a href="https://www.programiz.com/javascript/online-compiler/" class="article" target="_blank">PlayGround
+            JavaScript - Teste seu código aqui.</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Modo Leitura</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <form class="d-flex mt-1" role="search">
+                <input id="seach" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+                <button class="btn btn-outline-success d-flex" type="submit">
+                  <span class="material-symbols-outlined"> search </span>
+                </button>
+              </form>
+            </ul>
+          </div>
         </div>
-
-        <ul class="list-unstyled components">
-          <p>Documentação Date - JavaScript</p>
-          <li class="active">
-            <a
-              href="#homeSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-              >Home</a
-            >
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li>
-                <a href="index.html#intro">Introdução ao Objeto Date</a>
-              </li>
-              <li>
-                <a href="index.html#manipulacao">Manipulação de Datas</a>
-              </li>
-              <li>
-                <a href="index.html#descricao">Descrição</a>
-              </li>
-              <li>
-                <a href="index.html#datas">Operações com Datas</a>
-              </li>
-              <li>
-                <a href="index.html#fuso">Fuso Horário e Internacionalização</a>
-              </li>
-              <li>
-                <a href="index.html#boasPraticas">Boas Práticas</a>
-              </li>
-            </ul>
-          </li>
-          <li class="active">
-            <a
-              href="#construtorSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-              >Construtor</a
-            >
-            <ul class="collapse list-unstyled" id="construtorSubmenu">
-              <li>
-                <a href="#date">Date ()</a>
-              </li>
-            </ul>
-          </li>
-          <li class="active">
-            <a
-              href="#metodosSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-              >Métodos</a
-            >
-            <ul class="collapse list-unstyled" id="metodosSubmenu">
-              <li>
-                <a href="metodos.html#dateToPrimitive"
-                  >Date.prototype[@@toPrimitive]()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetDate">Date.prototype.getDate()</a>
-              </li>
-              <li>
-                <a href="metodos.html#dateGetDay">Date.prototype.getDay()</a>
-              </li>
-              <li>
-                <a href="metodos.html#dateGetFullYear"
-                  >Date.prototype.getFullYear()</a
-                >
-              </li>
-
-              <li>
-                <a href="metodos.html#dateGetHours"
-                  >Date.prototype.getHours()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetMilliseconds"
-                  >Date.prototype.getMilliseconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetMinutes"
-                  >Date.prototype.getMinutes()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetMonth"
-                  >Date.prototype.getMonth()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetSeconds"
-                  >Date.prototype.getSeconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetTime">Date.prototype.getTime()</a>
-              </li>
-              <li>
-                <a href="metodos.html#dateGetTimezoneOffset"
-                  >Date.prototype.getTimezoneOffset()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCDate"
-                  >Date.prototype.getUTCDate()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCDay"
-                  >Date.prototype.getUTCDay()
-                </a>
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCFullYear"
-                  >Date.prototype.getUTCFullYear()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCHours"
-                  >Date.prototype.getUTCHours()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCMilliseconds"
-                  >Date.prototype.getUTCMilliseconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCMinutes"
-                  >Date.prototype.getUTCMinutes()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCMonth"
-                  >Date.prototype.getUTCMonth()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateGetUTCSeconds"
-                  >Date.prototype.getUTCSeconds()</a
-                >
-              </li>
-              <li><a href="metodos.html#dateNow">Date.now()</a></li>
-              <li><a href="metodos.html#dateParse">Date.parse()</a></li>
-              <li>
-                <a href="metodos.html#dateSetDate">Date.prototype.setDate()</a>
-              </li>
-              <li>
-                <a href="metodos.html#dateSetFullYear"
-                  >Date.prototype.setFullYear()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetHours"
-                  >Date.prototype.setHours()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetMilliseconds"
-                  >Date.prototype.setMilliseconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetMinutes"
-                  >Date.prototype.setMinutes()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetMonth"
-                  >Date.prototype.setMonth()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetSeconds"
-                  >Date.prototype.setSeconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetTime">Date.prototype.setTime()</a>
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCDate"
-                  >Date.prototype.setUTCDate()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCFullYear"
-                  >Date.prototype.setUTCFullYear()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCHours"
-                  >Date.prototype.setUTCHours()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCMilliseconds"
-                  >Date.prototype.setUTCMilliseconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCMinutes"
-                  >Date.prototype.setUTCMinutes()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCMonth"
-                  >Date.prototype.setUTCMonth()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateSetUTCSeconds"
-                  >Date.prototype.setUTCSeconds()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateToDateString"
-                  >Date.prototype.toDateString()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateToISOString"
-                  >Date.prototype.toISOString()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateToJSON">Date.prototype.toJSON()</a>
-              </li>
-              <li>
-                <a href="metodos.html#dateToLocaleDateString"
-                  >Date.prototype.toLocaleDateString()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateToLocaleTimeString"
-                  >Date.prototype.toLocaleTimeString()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateToString"
-                  >Date.prototype.toString()</a
-                >
-              </li>
-              <li>
-                <a href="metodos.html#dateToTimeString"
-                  >Date.prototype.toTimeString()
-                </a>
-              </li>
-              <li>
-                <a href="metodos.html#dateToUTCString"
-                  >Date.prototype.toUTCString()</a
-                >
-              </li>
-              <li><a href="metodos.html#dateUTC">Date.UTC()</a></li>
-              <li>
-                <a href="metodos.html#dateValueOf">Date.prototype.valueOf()</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#equipe">Equipe</a>
-          </li>
-          <li>
-            <a
-              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date"
-              target="_blank"
-              >MDN DOCS - Referência</a
-            >
-          </li>
-        </ul>
-
-        <ul class="list-unstyled CTAs">
-          <li>
-            <a
-              href="./dowload/Date - JavaScript.pdf"
-              class="download"
-              download="Date - JavaScript.pdf"
-              >Download da Documentação</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.programiz.com/javascript/online-compiler/"
-              class="article"
-              target="_blank"
-              >PlayGround JavaScript - Teste seu código aqui.</a
-            >
-          </li>
-        </ul>
       </nav>
 
-      <!-- Page Content  -->
-      <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-              <i class="fas fa-align-left"></i>
-              <span>Modo Leitura</span>
-            </button>
-            <button
-              class="btn btn-dark d-inline-block d-lg-none ml-auto"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-align-justify"></i>
-            </button>
+      <h2 id="construtor">Construtor Date()</h2>
+      <p>
+        <strong>Objetivo:</strong> O construtor <code>Date()</code> é
+        utilizado para criar instâncias do objeto Date em JavaScript,
+        permitindo a manipulação de datas e horas.
+      </p>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav navbar-nav ml-auto">
-                <form class="d-flex mt-1" role="search">
-                  <input
-                    id="seach"
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Pesquisar"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success d-flex" type="submit">
-                    <span class="material-symbols-outlined"> search </span>
-                  </button>
-                </form>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <h2 id="construtor">Construtor Date()</h2>
-        <p>
-          <strong>Objetivo:</strong> O construtor <code>Date()</code> é
-          utilizado para criar instâncias do objeto Date em JavaScript,
-          permitindo a manipulação de datas e horas.
-        </p>
-
-        <h3>Sintaxe:</h3>
-        <pre>
+      <h3>Sintaxe:</h3>
+      <pre>
         <code>
           new Date();                        // Data e hora atuais
           new Date(valor);                   // Milissegundos desde 1º de janeiro de 1970 (Epoch)
@@ -421,90 +291,63 @@
         </code>
       </pre>
 
-        <h3>Exemplos:</h3>
-        <!-- Exemplo 1 -->
-        <div class="form-group">
-          <label for="exemploIntro"
-            >Criar uma instância com a data e hora atuais:</label
-          >
-          <textarea class="form-control" id="exemploIntro" rows="4">
-let dataAtual = new Date();
-document.getElementById('resultadoIntro').innerText = dataAtual;
-    </textarea
-          >
-          <button
-            class="btn btn-outline-success"
-            onclick="executarCodigo('#exemploIntro')"
-          >
-            Executar
-          </button>
-          <button
-            class="btn btn-primary"
-            onclick="copiarTexto('#exemploIntro')"
-          >
-            Copiar Código
-          </button>
-          <div id="resultadoIntro" class="highlight">
-            <code id="codigoIntro"></code>
-          </div>
-        </div>
+      <h3>Exemplos:</h3>
 
-        <!-- Exemplo 2 -->
-        <div class="form-group">
-          <label for="exemploDataString"
-            >Criar uma instância a partir de uma string de data:</label
-          >
-          <textarea class="form-control" id="exemploDataString" rows="4">
-let dataFromString = new Date("December 17, 1995 03:24:00");
-document.getElementById('resultadoDataString').innerText = dataFromString;
-    </textarea
-          >
-          <button
-            class="btn btn-outline-success"
-            onclick="executarCodigo('#exemploDataString')"
-          >
-            Executar
-          </button>
-          <button
-            class="btn btn-primary"
-            onclick="copiarTexto('#exemploDataString')"
-          >
-            Copiar Código
-          </button>
-          <div id="resultadoDataString" class="highlight">
-            <code id="codigoDataString"></code>
-          </div>
-        </div>
+      <!-- Exemplo 1 -->
+      <div class="form-group">
+        <label for="exemploIntro">Criar uma instância com a data e hora atuais:</label>
+        <textarea class="form-control" id="exemploIntro" rows="4">
+  let dataAtual = new Date();
+  console.log(dataAtual);
+  </textarea>
+        <button class="btn btn-outline-success" onclick="executarCodigo('#exemploIntro', '#resultadoIntro')">
+          Executar
+        </button>
+        <button class="btn btn-primary" onclick="copiarTexto('#exemploIntro')">
+          Copiar Código
+        </button>
+        <div id="resultadoIntro"></div>
+      </div>
 
-        <div id="equipe">
-          <footer
-            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-          >
-            <p class="col-md-4 mb-0 text-muted">
-              © 2023 Grupo Date - Nova Roma
-            </p>
+      <!-- Exemplo 2 -->
+      <div class="form-group">
+        <label for="exemploDataString">Criar uma instância a partir de uma string de data:</label>
+        <textarea class="form-control" id="exemploDataString" rows="4">
+  let dataFromString = new Date("December 17, 1995 03:24:00");
+  console.log(dataFromString);
+  </textarea>
+        <button class="btn btn-outline-success" onclick="executarCodigo('#exemploDataString', '#resultadoDataString')">
+          Executar
+        </button>
+        <button class="btn btn-primary" onclick="copiarTexto('#exemploDataString')">
+          Copiar Código
+        </button>
+        <div id="resultadoDataString"></div>
+      </div>
 
-            <a
-              href="/"
-              class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-            >
-            </a>
+      <div id="equipe">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">
+            © 2023 Grupo Date - Nova Roma
+          </p>
 
-            <p class="nav col-md-4 justify-content-end">
-              <strong
-                >Equipe: Sidraque, Matheus Estevam, Júlio César, Roberto Luís e
-                Cauet Roberto.
-              </strong>
-            </p>
-          </footer>
-        </div>
+          <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          </a>
+
+          <p class="nav col-md-4 justify-content-end">
+            <strong>Equipe: Sidraque, Matheus Estevam, Júlio César, Roberto Luís e
+              Cauet Roberto.
+            </strong>
+          </p>
+        </footer>
       </div>
     </div>
+  </div>
 
-    <script src="js/script.js"></script>
-    <script src="js/copiarTexto.js"></script>
-    <script src="js/executarCodigo.js"></script>
-    <!-- JavaScript para inicializar o Highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+  <!-- JavaScript para inicializar o Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</body>
+
 </html>
