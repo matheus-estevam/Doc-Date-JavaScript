@@ -709,329 +709,1658 @@ resultado += "Mês: " + mes;
         </div>
 
         <div class="line"></div>
+
         <h2 id="dateGetSeconds">Date.prototype.getSeconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getSeconds()</code> retorna os segundos para o objeto Date, um valor entre 0 e
+          59.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getSeconds(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento. Simplesmente retorna os segundos do objeto Date como um número.
+        </p>
+
+        <p>
+          Aqui está um exemplo de uso do método <code>getSeconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetSecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetSecondsExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+const dataAtual = new Date();
+
+// Obter os segundos usando o método getSeconds()
+const segundos = dataAtual.getSeconds();
+
+// Exibir o resultado
+resultado += "Segundos: " + segundos;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetSecondsExample', '#resultadoDateGetSecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetSecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetSecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetTime">Date.prototype.getTime()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getTime()</code> retorna o valor numérico correspondente ao horário para o
+          objeto Date.
+          Este valor é o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC (Época Unix).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getTime(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento. Simplesmente retorna os milissegundos desde a Época Unix.
+        </p>
+
+        <p>
+          Aqui está um exemplo de uso do método <code>getTime()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetTimeExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetTimeExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+const dataAtual = new Date();
+
+// Obter o valor numérico correspondente ao horário usando o método getTime()
+const valorNumerico = dataAtual.getTime();
+
+// Exibir o resultado
+resultado += "Valor Numérico: " + valorNumerico;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetTimeExample', '#resultadoDateGetTimeExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetTimeExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetTimeExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetTimezoneOffset">Date.prototype.getTimezoneOffset()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getTimezoneOffset()</code> retorna o deslocamento do fuso horário em minutos
+          entre o
+          horário local e o Tempo Universal Coordenado (UTC).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getTimezoneOffset(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando o deslocamento do fuso
+          horário.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getTimezoneOffset()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetTimezoneOffsetExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetTimezoneOffsetExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+const dataAtual = new Date();
+
+// Obter o deslocamento do fuso horário em minutos usando o método getTimezoneOffset()
+const offset = dataAtual.getTimezoneOffset();
+
+// Exibir o resultado
+resultado += "Deslocamento de Fuso Horário (minutos): " + offset;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetTimezoneOffsetExample', '#resultadoDateGetTimezoneOffsetExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetTimezoneOffsetExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetTimezoneOffsetExample"></div>
+        </div>
+
         <div class="line"></div>
+
+
         <h2 id="dateGetUTCDate">Date.prototype.getUTCDate()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCDate()</code> retorna o dia do mês (de 1 a 31) para o objeto Date em
+          relação ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCDate(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando o dia do mês em relação ao
+          UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCDate()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCDateExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCDateExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter o dia do mês (de 1 a 31) usando o método getUTCDate()
+const diaUTC = dataAtualUTC.getUTCDate();
+
+// Exibir o resultado
+resultado += "Dia do mês UTC (de 1 a 31): " + diaUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCDateExample', '#resultadoDateGetUTCDateExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCDateExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCDateExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCDay">Date.prototype.getUTCDay()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCDay()</code> retorna o dia da semana (de 0 a 6, onde 0 é domingo) para o
+          objeto Date
+          em relação ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCDay(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando o dia da semana em relação ao
+          UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCDay()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCDayExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCDayExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter o dia da semana (de 0 a 6, onde 0 é domingo) usando o método getUTCDay()
+const diaSemanaUTC = dataAtualUTC.getUTCDay();
+
+// Exibir o resultado
+resultado += "Dia da semana UTC (de 0 a 6): " + diaSemanaUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCDayExample', '#resultadoDateGetUTCDayExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCDayExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCDayExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCFullYear">Date.prototype.getUTCFullYear()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCFullYear()</code> retorna o ano (um número de quatro dígitos) para o
+          objeto Date
+          em relação ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCFullYear(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando o ano em relação ao UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCFullYear()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCFullYearExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCFullYearExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter o ano (um número de quatro dígitos) usando o método getUTCFullYear()
+const anoUTC = dataAtualUTC.getUTCFullYear();
+
+// Exibir o resultado
+resultado += "Ano UTC: " + anoUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCFullYearExample', '#resultadoDateGetUTCFullYearExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCFullYearExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCFullYearExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCHours">Date.prototype.getUTCHours()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCHours()</code> retorna as horas (de 0 a 23) para o objeto Date em relação
+          ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCHours(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando as horas em relação ao UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCHours()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCHoursExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCHoursExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter as horas (de 0 a 23) usando o método getUTCHours()
+const horasUTC = dataAtualUTC.getUTCHours();
+
+// Exibir o resultado
+resultado += "Horas UTC (de 0 a 23): " + horasUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCHoursExample', '#resultadoDateGetUTCHoursExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCHoursExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCHoursExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCMilliseconds">Date.prototype.getUTCMilliseconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCMilliseconds()</code> retorna os milissegundos (de 0 a 999) para o objeto
+          Date
+          em relação ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCMilliseconds(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando os milissegundos em relação ao
+          UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCMilliseconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCMillisecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCMillisecondsExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter os milissegundos (de 0 a 999) usando o método getUTCMilliseconds()
+const milissegundosUTC = dataAtualUTC.getUTCMilliseconds();
+
+// Exibir o resultado
+resultado += "Milissegundos UTC (de 0 a 999): " + milissegundosUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCMillisecondsExample', '#resultadoDateGetUTCMillisecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCMillisecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCMillisecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCMinutes">Date.prototype.getUTCMinutes()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCMinutes()</code> retorna os minutos (de 0 a 59) para o objeto Date em
+          relação ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCMinutes(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando os minutos em relação ao UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCMinutes()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCMinutesExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCMinutesExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter os minutos (de 0 a 59) usando o método getUTCMinutes()
+const minutosUTC = dataAtualUTC.getUTCMinutes();
+
+// Exibir o resultado
+resultado += "Minutos UTC (de 0 a 59): " + minutosUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCMinutesExample', '#resultadoDateGetUTCMinutesExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCMinutesExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCMinutesExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCMonth">Date.prototype.getUTCMonth()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCMonth()</code> retorna o mês (de 0 a 11) para o objeto Date em relação ao
+          UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCMonth(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando o mês em relação ao UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCMonth()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCMonthExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCMonthExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter o mês (de 0 a 11) usando o método getUTCMonth()
+const mesUTC = dataAtualUTC.getUTCMonth();
+
+// Exibir o resultado
+resultado += "Mês UTC (de 0 a 11): " + mesUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCMonthExample', '#resultadoDateGetUTCMonthExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCMonthExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCMonthExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateGetUTCSeconds">Date.prototype.getUTCSeconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.getUTCSeconds()</code> retorna os segundos (de 0 a 59) para o objeto Date em
+          relação ao UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.getUTCSeconds(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando os segundos em relação ao UTC.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>getUTCSeconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateGetUTCSecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="dateGetUTCSecondsExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais em UTC
+const dataAtualUTC = new Date(Date.now());
+
+// Obter os segundos (de 0 a 59) usando o método getUTCSeconds()
+const segundosUTC = dataAtualUTC.getUTCSeconds();
+
+// Exibir o resultado
+resultado += "Segundos UTC (de 0 a 59): " + segundosUTC;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateGetUTCSecondsExample', '#resultadoDateGetUTCSecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateGetUTCSecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateGetUTCSecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateNow">Date.now()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.now()</code> retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC
+          até o momento
+          atual.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.now(): number;</code></pre>
+
+        <p>
+          Este método não leva nenhum argumento e retorna um número inteiro representando o timestamp atual em
+          milissegundos.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>now()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateNowExample">Exemplo:</label>
+          <textarea class="form-control" id="dateNowExample" rows="8">
+// Obter o timestamp atual em milissegundos usando o método Date.now()
+const timestampAtual = Date.now();
+
+// Exibir o resultado
+resultado += "Timestamp atual em milissegundos: " + timestampAtual;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateNowExample', '#resultadoDateNowExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateNowExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateNowExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateParse">Date.parse()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.parse()</code> analisa uma representação de string de data e retorna o número de
+          milissegundos
+          desde 1º de janeiro de 1970 00:00:00 UTC até a data representada pela string.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.parse(dateString: string): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>dateString</code> representando a string de data a ser analisada e
+          retorna um
+          número inteiro representando o timestamp em milissegundos.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>parse()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateParseExample">Exemplo:</label>
+          <textarea class="form-control" id="dateParseExample" rows="8">
+// Analisar uma string de data usando o método Date.parse()
+const timestampFromString = Date.parse("2023-12-10T12:30:00Z");
+
+// Criar uma instância de Date a partir do timestamp obtido
+const dataConvertida = new Date(timestampFromString);
+
+// Exibir o resultado
+resultado += "Data convertida a partir da string: " + dataConvertida.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateParseExample', '#resultadoDateParseExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateParseExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateParseExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetDate">Date.prototype.setDate()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setDate()</code> define o dia do mês para um objeto Date, alterando o valor do
+          dia.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setDate(day: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>day</code> representando o dia do mês (de 1 a 31) e retorna o número de
+          milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setDate()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetDateExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetDateExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir o dia do mês como 15
+data.setDate(15);
+
+// Exibir o resultado
+resultado += "Data após definir o dia do mês como 15: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetDateExample', '#resultadoDateSetDateExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetDateExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetDateExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetFullYear">Date.prototype.setFullYear()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setFullYear()</code> define o ano para um objeto Date, alterando o valor da
+          data.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setFullYear(year: number[, month: number, day: number]): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>year</code> representando o ano (um número de quatro dígitos), e
+          opcionalmente, um argumento <code>month</code> (de 0 a 11) e um argumento <code>day</code> (de 1 a 31), e
+          retorna o
+          número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setFullYear()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetFullYearExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetFullYearExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir o ano como 2023
+data.setFullYear(2023);
+
+// Exibir o resultado
+resultado += "Data após definir o ano como 2023: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetFullYearExample', '#resultadoDateSetFullYearExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetFullYearExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetFullYearExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetHours">Date.prototype.setHours()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setHours()</code> define as horas para um objeto Date, alterando o valor da
+          hora.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setHours(hours: number[, minutes: number, seconds: number, ms: number]): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>hours</code> representando as horas (de 0 a 23) e, opcionalmente, um
+          argumento
+          <code>minutes</code> (de 0 a 59), um argumento <code>seconds</code> (de 0 a 59) e um argumento <code>ms</code>
+          (de 0
+          a 999), e retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setHours()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetHoursExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetHoursExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir as horas como 15
+data.setHours(15);
+
+// Exibir o resultado
+resultado += "Data após definir as horas como 15: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetHoursExample', '#resultadoDateSetHoursExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetHoursExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetHoursExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="SetMilliseconds">Date.prototype.setMilliseconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setMilliseconds()</code> define os milissegundos para um objeto Date, alterando
+          o valor
+          dos milissegundos.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setMilliseconds(ms: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>ms</code> representando os milissegundos (de 0 a 999) e retorna o número
+          de
+          milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setMilliseconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="SetMillisecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="SetMillisecondsExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir os milissegundos como 500
+data.setMilliseconds(500);
+
+// Exibir o resultado
+resultado += "Data após definir os milissegundos como 500: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#SetMillisecondsExample', '#resultadoSetMillisecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#SetMillisecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoSetMillisecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetMinutes">Date.prototype.setMinutes()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setMinutes()</code> define os minutos para um objeto Date, alterando o valor dos
+          minutos.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setMinutes(minutes: number[, seconds: number, ms: number]): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>minutes</code> representando os minutos (de 0 a 59), e opcionalmente, um
+          argumento <code>seconds</code> (de 0 a 59) e um argumento <code>ms</code> (de 0 a 999), e retorna o número de
+          milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setMinutes()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetMinutesExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetMinutesExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir os minutos como 30
+data.setMinutes(30);
+
+// Exibir o resultado
+resultado += "Data após definir os minutos como 30: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetMinutesExample', '#resultadoDateSetMinutesExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetMinutesExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetMinutesExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetMonth">Date.prototype.setMonth()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setMonth()</code> define o mês para um objeto Date, alterando o valor do mês.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setMonth(month: number[, day: number]): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>month</code> representando o mês (de 0 a 11) e, opcionalmente, um
+          argumento
+          <code>day</code> (de 1 a 31), e retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até
+          a data
+          modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setMonth()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetMonthExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetMonthExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir o mês como abril (0 a 11)
+data.setMonth(3); // 3 representa abril
+
+// Exibir o resultado
+resultado += "Data após definir o mês como abril: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetMonthExample', '#resultadoDateSetMonthExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetMonthExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetMonthExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetSeconds">Date.prototype.setSeconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setSeconds()</code> define os segundos para um objeto Date, alterando o valor
+          dos
+          segundos.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setSeconds(seconds: number[, ms: number]): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>seconds</code> representando os segundos (de 0 a 59) e, opcionalmente,
+          um
+          argumento <code>ms</code> (de 0 a 999), e retorna o número de milissegundos desde 1º de janeiro de 1970
+          00:00:00 UTC
+          até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setSeconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetSecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetSecondsExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir os segundos como 45
+data.setSeconds(45);
+
+// Exibir o resultado
+resultado += "Data após definir os segundos como 45: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetSecondsExample', '#resultadoDateSetSecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetSecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetSecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetTime">Date.prototype.setTime()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setTime()</code> define os milissegundos para um objeto Date, alterando o valor
+          da data
+          baseado em milissegundos desde 1º de janeiro de 1970 00:00:00 UTC.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setTime(time: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>time</code> representando o número de milissegundos desde 1º de janeiro
+          de 1970
+          00:00:00 UTC e retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data
+          modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setTime()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetTimeExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetTimeExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir a data baseada em milissegundos desde 1º de janeiro de 2023
+data.setTime(1672531200000);
+
+// Exibir o resultado
+resultado += "Data após definir a partir de milissegundos: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetTimeExample', '#resultadoDateSetTimeExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetTimeExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetTimeExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCDate">Date.prototype.setUTCDate()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCDate()</code> define o dia do mês para um objeto Date em relação ao UTC,
+          alterando o valor da data.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCDate(day: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>day</code> representando o dia do mês (de 1 a 31) em relação ao UTC, e
+          retorna
+          o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCDate()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCDateExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCDateExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir o dia do mês em UTC como 10
+data.setUTCDate(10);
+
+// Exibir o resultado
+resultado += "Data após definir o dia do mês em UTC como 10: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCDateExample', '#resultadoDateSetUTCDateExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCDateExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCDateExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCFullYear">Date.prototype.setUTCFullYear()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCFullYear()</code> define o ano para um objeto Date em relação ao UTC,
+          alterando o valor da data.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCFullYear(year: number[, month: number, day: number]): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento <code>year</code> representando o ano (um número de quatro dígitos) em relação
+          ao UTC
+          e, opcionalmente, um argumento <code>month</code> (de 0 a 11) e um argumento <code>day</code> (de 1 a 31), e
+          retorna
+          o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data modificada.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCFullYear()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCFullYearExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCFullYearExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Definir o ano em UTC como 2025
+data.setUTCFullYear(2025);
+
+// Exibir o resultado
+resultado += "Data após definir o ano em UTC como 2025: " + data.toDateString();
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCFullYearExample', '#resultadoDateSetUTCFullYearExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCFullYearExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCFullYearExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCHours">Date.prototype.setUTCHours()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCHours()</code> define as horas de uma data de acordo com o tempo universal
+          coordenado (UTC).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCHours(hours: number, minutes?: number, seconds?: number, ms?: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento obrigatório <code>hours</code> representando as horas (um número inteiro entre
+          0 e 23)
+          e argumentos opcionais <code>minutes</code>, <code>seconds</code> e <code>ms</code>, representando os minutos
+          (0 a 59),
+          segundos (0 a 59) e milissegundos (0 a 999), respectivamente. Retorna o número de milissegundos desde 1º de
+          janeiro de
+          1970 00:00:00 UTC até a data após a modificação.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCHours()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCHoursExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCHoursExample" rows="8">
+        // Criar uma instância de Date com a data e hora atuais
+        let data = new Date();
+        
+        // Definir as horas para 12, mantendo os minutos, segundos e milissegundos inalterados
+        data.setUTCHours(12);
+        
+        // Exibir a data após a modificação
+        resultado += "Data após definir as horas para 12 (UTC): " + data;
+          </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCHoursExample', '#resultadoDateSetUTCHoursExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCHoursExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCHoursExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCMilliseconds">Date.prototype.setUTCMilliseconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCMilliseconds()</code> define os milissegundos de uma data de acordo com o
+          tempo
+          universal coordenado (UTC).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCMilliseconds(ms: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento obrigatório <code>ms</code> representando os milissegundos (um número inteiro
+          entre 0
+          e 999). Retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data após a
+          modificação.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCMilliseconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCMillisecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCMillisecondsExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+let data = new Date();
+
+// Definir os milissegundos para 500, mantendo as outras partes da data inalteradas
+data.setUTCMilliseconds(500);
+
+// Exibir a data após a modificação
+resultado += "Data após definir os milissegundos para 500 (UTC): " + data;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCMillisecondsExample', '#resultadoDateSetUTCMillisecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCMillisecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCMillisecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCMinutes">Date.prototype.setUTCMinutes()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCMinutes()</code> define os minutos de uma data de acordo com o tempo
+          universal
+          coordenado (UTC).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCMinutes(minutes: number, seconds?: number, ms?: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento obrigatório <code>minutes</code> representando os minutos (um número inteiro
+          entre 0
+          e 59) e argumentos opcionais <code>seconds</code> e <code>ms</code>, representando os segundos (0 a 59) e
+          milissegundos (0 a 999), respectivamente. Retorna o número de milissegundos desde 1º de janeiro de 1970
+          00:00:00 UTC
+          até a data após a modificação.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCMinutes()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCMinutesExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCMinutesExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+let data = new Date();
+
+// Definir os minutos para 30, mantendo os segundos e milissegundos inalterados
+data.setUTCMinutes(30);
+
+// Exibir a data após a modificação
+resultado += "Data após definir os minutos para 30 (UTC): " + data;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCMinutesExample', '#resultadoDateSetUTCMinutesExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCMinutesExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCMinutesExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCMonth">Date.prototype.setUTCMonth()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCMonth()</code> define o mês de uma data de acordo com o tempo universal
+          coordenado
+          (UTC).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCMonth(month: number, day?: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento obrigatório <code>month</code> representando o mês (um número inteiro entre 0
+          e 11) e
+          um argumento opcional <code>day</code> representando o dia do mês (um número inteiro entre 1 e 31). Se o
+          argumento
+          <code>day</code> não for fornecido, a data do mês será mantida. Retorna o número de milissegundos desde 1º de
+          janeiro
+          de 1970 00:00:00 UTC até a data após a modificação.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCMonth()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCMonthExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCMonthExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+let data = new Date();
+
+// Definir o mês para agosto (oitavo mês do ano)
+data.setUTCMonth(7);
+
+// Exibir a data após a modificação
+resultado += "Data após definir o mês para agosto (UTC): " + data;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCMonthExample', '#resultadoDateSetUTCMonthExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCMonthExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCMonthExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateSetUTCSeconds">Date.prototype.setUTCSeconds()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.setUTCSeconds()</code> define os segundos de uma data de acordo com o tempo
+          universal
+          coordenado (UTC).
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.setUTCSeconds(seconds: number, ms?: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento obrigatório <code>seconds</code> representando os segundos (um número inteiro
+          entre 0
+          e 59) e um argumento opcional <code>ms</code> representando os milissegundos (um número inteiro entre 0 e
+          999). Retorna
+          o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data após a modificação.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>setUTCSeconds()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateSetUTCSecondsExample">Exemplo:</label>
+          <textarea class="form-control" id="dateSetUTCSecondsExample" rows="8">
+// Criar uma instância de Date com a data e hora atuais
+let data = new Date();
+
+// Definir os segundos para 45, mantendo os milissegundos inalterados
+data.setUTCSeconds(45);
+
+// Exibir a data após a modificação
+resultado += "Data após definir os segundos para 45 (UTC): " + data;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateSetUTCSecondsExample', '#resultadoDateSetUTCSecondsExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateSetUTCSecondsExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateSetUTCSecondsExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateToDateString">Date.prototype.toDateString()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.toDateString()</code> retorna uma representação da parte da data de um objeto
+          Date
+          como uma string legível.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.toDateString(): string;</code></pre>
+
+        <p>
+          Este método não recebe nenhum argumento e retorna uma string representando a parte da data do objeto Date. A
+          parte da
+          hora é sempre ignorada e não é incluída na string resultante.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>toDateString()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateToDateStringExample">Exemplo:</label>
+          <textarea class="form-control" id="dateToDateStringExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter a representação da parte da data como string
+const dataString = data.toDateString();
+
+// Exibir o resultado
+resultado += "Representação da parte da data: " + dataString;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateToDateStringExample', '#resultadoDateToDateStringExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateToDateStringExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateToDateStringExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateToISOString">Date.prototype.toISOString()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.toISOString()</code> retorna uma representação da data em formato ISO (String
+          Internacional de Objetos) do objeto Date.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.toISOString(): string;</code></pre>
+
+        <p>
+          Este método não recebe nenhum argumento e retorna uma string representando a data em formato ISO. A string tem
+          o
+          formato "AAAA-MM-DDTHH:mm:ss.sssZ", onde "AAAA" é o ano com quatro dígitos, "MM" é o mês (01 a 12), "DD" é o
+          dia do
+          mês (01 a 31), "HH" são as horas (00 a 23), "mm" são os minutos (00 a 59), "ss" são os segundos (00 a 59) e
+          "sss" são
+          os milissegundos (000 a 999). O "Z" indica que a string está em UTC (tempo universal coordenado).
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>toISOString()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateToISOStringExample">Exemplo:</label>
+          <textarea class="form-control" id="dateToISOStringExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter a representação da data em formato ISO
+const isoString = data.toISOString();
+
+// Exibir o resultado
+resultado += "Representação da data em formato ISO: " + isoString;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateToISOStringExample', '#resultadoDateToISOStringExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateToISOStringExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateToISOStringExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateToJSON">Date.prototype.toJSON()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.toJSON()</code> retorna uma string JSON representando a data (incluindo a parte
+          do
+          tempo) do objeto Date.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.toJSON(key?: any): string | null;</code></pre>
+
+        <p>
+          Este método aceita um argumento opcional <code>key</code>, que é ignorado, e retorna uma string JSON
+          representando a
+          data (incluindo a parte do tempo) do objeto Date. A string tem o mesmo formato que a representação do método
+          <code>toISOString()</code>.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>toJSON()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateToJSONExample">Exemplo:</label>
+          <textarea class="form-control" id="dateToJSONExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter a representação JSON da data
+const jsonString = data.toJSON();
+
+// Exibir o resultado
+resultado += "Representação JSON da data: " + jsonString;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateToJSONExample', '#resultadoDateToJSONExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateToJSONExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateToJSONExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateToString">Date.prototype.toString()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.toString()</code> retorna uma string representando a data e a hora do objeto
+          Date.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.toString(): string;</code></pre>
+
+        <p>
+          Este método não recebe nenhum argumento e retorna uma string representando a data e a hora do objeto Date. O
+          formato
+          da string depende da implementação do JavaScript e do ambiente em que está sendo executado.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>toString()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateToStringExample">Exemplo:</label>
+          <textarea class="form-control" id="dateToStringExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter a representação da data e hora como string
+const dateString = data.toString();
+
+// Exibir o resultado
+resultado += "Representação da data e hora: " + dateString;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateToStringExample', '#resultadoDateToStringExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateToStringExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateToStringExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateToTimeString">Date.prototype.toTimeString()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.toTimeString()</code> retorna uma string representando a parte do tempo do
+          objeto Date.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.toTimeString(): string;</code></pre>
+
+        <p>
+          Este método não recebe nenhum argumento e retorna uma string representando a parte do tempo do objeto Date. O
+          formato
+          da string depende da implementação do JavaScript e do ambiente em que está sendo executado.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>toTimeString()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateToTimeStringExample">Exemplo:</label>
+          <textarea class="form-control" id="dateToTimeStringExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter a representação da parte do tempo como string
+const timeString = data.toTimeString();
+
+// Exibir o resultado
+resultado += "Representação da parte do tempo: " + timeString;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateToTimeStringExample', '#resultadoDateToTimeStringExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateToTimeStringExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateToTimeStringExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateToUTCString">Date.prototype.toUTCString()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.toUTCString()</code> retorna uma string representando a data e a hora em UTC do
+          objeto
+          Date.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.toUTCString(): string;</code></pre>
+
+        <p>
+          Este método não recebe nenhum argumento e retorna uma string representando a data e a hora em UTC do objeto
+          Date. O
+          formato da string é "Dia, DD Mês AAAA HH:mm:ss GMT", onde "Dia" é o nome do dia da semana em inglês, "DD" é o
+          dia do
+          mês (01 a 31), "Mês" é o nome do mês em inglês, "AAAA" é o ano com quatro dígitos, "HH" são as horas (00 a
+          23), "mm"
+          são os minutos (00 a 59) e "ss" são os segundos (00 a 59).
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>toUTCString()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateToUTCStringExample">Exemplo:</label>
+          <textarea class="form-control" id="dateToUTCStringExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter a representação da data e hora em UTC como string
+const utcString = data.toUTCString();
+
+// Exibir o resultado
+resultado += "Representação da data e hora em UTC: " + utcString;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateToUTCStringExample', '#resultadoDateToUTCStringExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateToUTCStringExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateToUTCStringExample"></div>
+        </div>
+
         <div class="line"></div>
+
         <h2 id="dateUTC">Date.UTC()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.UTC()</code> retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC
+          até uma
+          determinada data e hora.
         </p>
+
+        <h3>Assinatura</h3>
+        <pre><code>Date.UTC(year: number, month?: number, day?: number, hours?: number, minutes?: number, seconds?: number, ms?: number): number;</code></pre>
+
+        <p>
+          Este método recebe um argumento obrigatório <code>year</code> representando o ano (um número de quatro
+          dígitos) e
+          argumentos opcionais <code>month</code>, <code>day</code>, <code>hours</code>, <code>minutes</code>,
+          <code>seconds</code>
+          e <code>ms</code>, representando o mês (de 0 a 11), o dia do mês (1 a 31), as horas (0 a 23), os minutos (0 a
+          59), os
+          segundos (0 a 59) e os milissegundos (0 a 999), respectivamente. Retorna o número de milissegundos desde 1º de
+          janeiro
+          de 1970 00:00:00 UTC até a data e hora especificadas.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>Date.UTC()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateUTCExample">Exemplo:</label>
+          <textarea class="form-control" id="dateUTCExample" rows="8">
+// Obter o número de milissegundos desde 1º de janeiro de 2023 00:00:00 UTC até a data e hora especificadas
+const milissegundos = Date.UTC(2023, 5, 15, 12, 30, 0);
+
+// Exibir o resultado
+resultado += "Milissegundos desde 1º de janeiro de 2023 00:00:00 UTC até 15 de junho de 2023 12:30:00: " + milissegundos;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateUTCExample', '#resultadoDateUTCExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateUTCExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateUTCExample"></div>
+        </div>
 
         <div class="line"></div>
+
+
         <h2 id="dateValueOf">Date.prototype.valueOf()</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          enim dolorem consectetur dolores laborum eaque maxime et fuga
-          voluptatum, accusantium officiis cumque. Fugiat cumque dolorem
-          accusamus temporibus asperiores. Sed, eligendi!
+          O método <code>Date.prototype.valueOf()</code> retorna o valor primitivo de um objeto Date. O valor primitivo
+          é o
+          número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data representada pelo objeto Date.
         </p>
 
+        <h3>Assinatura</h3>
+        <pre><code>Date.prototype.valueOf(): number;</code></pre>
+
+        <p>
+          Este método não recebe nenhum argumento e retorna um número representando o valor primitivo do objeto Date, ou
+          seja,
+          o número de milissegundos desde 1º de janeiro de 1970 00:00:00 UTC até a data representada pelo objeto Date.
+        </p>
+
+        <p>
+          Exemplo de uso do método <code>valueOf()</code>:
+        </p>
+
+        <div class="form-group">
+          <label for="dateValueOfExample">Exemplo:</label>
+          <textarea class="form-control" id="dateValueOfExample" rows="8">
+// Criar uma instância de Date com a data atual
+const data = new Date();
+
+// Obter o valor primitivo (milissegundos desde 1º de janeiro de 1970 00:00:00 UTC)
+const valorPrimitivo = data.valueOf();
+
+// Exibir o resultado
+resultado += "Valor primitivo do objeto Date: " + valorPrimitivo;
+  </textarea>
+          <button class="btn btn-outline-success"
+            onclick="executarCodigo('#dateValueOfExample', '#resultadoDateValueOfExample')">
+            Executar
+          </button>
+          <button class="btn btn-primary" onclick="copiarTexto('#dateValueOfExample')">
+            Copiar Código
+          </button>
+          <!-- Adicionando o elemento div para exibir o resultado -->
+          <div id="resultadoDateValueOfExample"></div>
+        </div>
+        
         <div id="equipe">
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p class="col-md-4 mb-0 text-muted">
